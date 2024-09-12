@@ -11,14 +11,19 @@ import java.util.List;
 public class StatementCompletion {
     private boolean flag = true;
     private int i = 10;
+    private String testStr = "";
 
     List<String> items = null;
+
     /**
      * Complete a method declaration
-     *
+     * <p>
      * Start typing a method declaration and press Ctrl+Shift+Enter after the opening parenthesis.
      */
-   
+    public void testStatementCompletion(boolean test) {
+        System.out.println(flag);
+    }
+
     /**
      * Complete a code construct
      *
@@ -36,4 +41,9 @@ public class StatementCompletion {
      *  Type an expression. Then type a method call.
      *  When println gets the focus in the suggestion list, select it with Ctrl+Shift+Enter:
      */
+
+    public void testWrapCallArgument() {
+        testStatementCompletion(flag);
+    }
+
 }
