@@ -1,9 +1,13 @@
 package lfe.sample.codecompletion;
 
 import ch.qos.logback.core.util.ExecutorServiceUtil;
+import lfe.sample.model.Person;
 
 import java.util.*;
 import java.util.concurrent.ExecutorService;
+
+import lfe.sample.util.DataUtil;
+import lfe.sample.util.DataUtil.*;
 
 /**
  * Ctrl+Shift+Space (Windows/Linux) to invoke smart completion.
@@ -55,8 +59,14 @@ public class SmartCodeCompletion {
 
     public static void main(String[] args) {
         // 6. Type-matching completion in chained method calls - for static expressions,lists ,arrays
-        ExecutorService executorService = ExecutorServiceUtil.newExecutorService();
-        Collection<String> strings = new ArrayList<>();
+        //ExecutorService executorService = ExecutorServiceUtil.newExecutorService();
+
+        String[] names = {"Steve","Peter"};
+        //List<String> list = Arrays.asList(names);
+        //String[] p =
+        //Person p = DataUtil.
+
+
 
     }
 }
