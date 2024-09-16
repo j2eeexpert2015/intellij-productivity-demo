@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 
 import lfe.sample.util.DataUtil;
-import lfe.sample.util.DataUtil.*;
+
 
 /**
  * Ctrl+Shift+Space (Windows/Linux) to invoke smart completion.
@@ -34,14 +34,17 @@ public class SmartCodeCompletion {
     public void variableInitializerCompletion() {
         // IntelliJ will suggest constructors or factory methods like Arrays.asList()
         // that match the List<String> type in this variable initializer
-        //List<String> list =
+        String[] sampleStringArray = {"One","Two","Three"};
+        List<String> list = Arrays.asList(sampleStringArray);
         // Suggested completion: Arrays.asList("One", "Two"); or new ArrayList<>();
     }
 
     // 3. Type-matching completion in return statements
     public List<String> returnCompletion() {
         // IntelliJ will suggest compatible return values based on the method's return type
-        return Collections.emptyList();
+        String[] sampleStringArray = {"One","Two","Three"};
+        //return Collections.emptyList();
+        return Arrays.asList(sampleStringArray);
         // Suggested completion: new ArrayList<>(); or Arrays.asList("a", "b");
     }
 
@@ -53,18 +56,18 @@ public class SmartCodeCompletion {
         // IntelliJ will suggest compatible implementations of List<String>
         // after the new keyword
         Calendar calendar ;
-        calendar = new GregorianCalendar(Locale.ENGLISH);
+        calendar = new GregorianCalendar(Locale.CANADA);
 
     }
 
     public static void main(String[] args) {
         // 6. Type-matching completion in chained method calls - for static expressions,lists ,arrays
-        //ExecutorService executorService = ExecutorServiceUtil.newExecutorService();
+        ExecutorService executorService = ExecutorServiceUtil.newExecutorService();
 
         String[] names = {"Steve","Peter"};
         //List<String> list = Arrays.asList(names);
         //String[] p =
-        //Person p = DataUtil.
+        Person p = DataUtil.getPersonMap().get(1);
 
 
 

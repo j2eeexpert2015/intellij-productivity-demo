@@ -13,7 +13,10 @@ public class StatementCompletion {
     private int i = 10;
     private String testStr = "";
 
-    List<String> items = null;
+    int j = 200;
+    public void test() {
+
+    }
 
     /**
      * Complete a method declaration
@@ -21,7 +24,7 @@ public class StatementCompletion {
      * Start typing a method declaration and press Ctrl+Shift+Enter after the opening parenthesis.
      */
     public void testStatementCompletion(boolean test) {
-        System.out.println(flag);
+        //System.out.println(flag);
     }
 
     /**
@@ -32,8 +35,10 @@ public class StatementCompletion {
      * The caret is placed at the next editing position.
      */
 
+    public void testBlockCompletion(boolean test) {
+        int i = 100;
 
-
+    }
 
     /**
      *  Wrap a method call argument
@@ -43,7 +48,10 @@ public class StatementCompletion {
      */
 
     public void testWrapCallArgument() {
-        testStatementCompletion(flag);
+       int i =100;
+        System.out.println(i);
+        boolean test = false ;
+        testBlockCompletion(test);
     }
 
 }

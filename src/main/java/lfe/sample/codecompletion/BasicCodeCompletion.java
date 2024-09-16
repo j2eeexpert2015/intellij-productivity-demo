@@ -9,11 +9,13 @@ import lfe.sample.model.Student;
  * or choose Code -> Code Completion -> Basic from the main menu.
  */
 public class BasicCodeCompletion {
-    public String sampleText = "Sample Dummy Text ";
-    public void printSampleText() {
-        sampleText = sampleText.toLowerCase();
-        Student student = new Student("Peter",30,"Dummy Address");
-        //student.
+
+    public String name ="Dummy Name !";
+    public void codeCompletionDemo()
+    {
+        name=name.toUpperCase();
+        Student student = new Student("dummy name",50,"US");
+        
     }
 
 }
