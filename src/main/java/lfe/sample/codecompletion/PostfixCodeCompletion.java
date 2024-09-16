@@ -23,21 +23,15 @@ public class PostfixCodeCompletion {
     public void demonstratePostFixCodeCompletion() {
         //Null
         //Not Null Check
-        //Synchronized
         //Try
         //For Iterate
         //Print with sout
-        //Switch over a value
         //Surround with try catch
 
-        /**
-         * fori - for iterating with an index over a collection
-         * forr - iterates with index in reverse order
-         * switch - produces switch statement with the expression
-         * sout - Prints the expression using System.out.println
-         * null - check if an expression is null
-         * notnull - checks if an expression is not null
-         */
+
+
+
+
 
         /**
          * Displaying available templates
@@ -49,9 +43,7 @@ public class PostfixCodeCompletion {
          */
 
     }
-    public void testThrowException() throws FileNotFoundException {
 
-    }
 
     //Create Custom Postfix
 }
