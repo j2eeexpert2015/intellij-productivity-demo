@@ -12,6 +12,7 @@ import java.util.List;
 public class PostfixCodeCompletion {
     public String name = "Java";
     List<String> days = Arrays.asList("Sun","Mon","Tues");
+    boolean flag = true;
     public enum Day {MON,TUE,WED,THU,FRI,SAT,SUN , }
     /**
      * Displaying available templates: Ctrl + J
@@ -27,10 +28,18 @@ public class PostfixCodeCompletion {
         //For Iterate
         //Print with sout
         //Surround with try catch
+        for (int i = 0; i < days.size(); i++) {
 
+        }
+        try {
+            for (String day : days) {
+                System.out.println(day);
 
-
-
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        //logger.info("{} = {}", "name", name);
 
 
         /**
