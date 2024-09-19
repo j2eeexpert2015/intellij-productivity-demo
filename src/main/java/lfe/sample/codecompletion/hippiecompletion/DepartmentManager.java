@@ -6,6 +6,8 @@ public class DepartmentManager {
     private int departmentCount;
 
     public void manageDepartment() {
+        //dep
+        //employee
 
     }
 }
