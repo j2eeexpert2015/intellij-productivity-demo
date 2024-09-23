@@ -1,6 +1,5 @@
 package lfe.sample.codecompletion;
 
-import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 
