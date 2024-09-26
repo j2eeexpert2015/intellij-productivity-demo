@@ -17,23 +17,23 @@ public class SSRSampleIssues {
 
         // Sample 1: Completely Empty Catch Block
         try {
-            FileReader reader = new FileReader("file.txt");
-        } catch (FileNotFoundException e) {
-            // Swallowed the exception, no action taken
-        }
+    FileReader reader = new FileReader("file.txt");
+} catch (FileNotFoundException e) {
+    logger.error("Exception caught: ", e);
+}
 
         // Sample 2: Catch Block with Only a Comment
         try {
-            int result = 10 / 0;
-        } catch (ArithmeticException e) {
-            // TODO: Handle the exception later
-        }
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    logger.error("Exception caught: ", e);
+}
 
         // Sample 3: Catch Block with Print Statement (Not Proper Logging)
         try {
             FileReader reader = new FileReader("file.txt");
         } catch (IOException e) {
-            System.out.println("Exception occurred: " + e.getMessage());
+            logger.error("Exception caught: ", e);
             // Swallowed without proper logging or handling
         }
 
@@ -62,10 +62,10 @@ public class SSRSampleIssues {
 
         // Sample 7: Empty Catch Block with Logging Comment (But No Logging Implemented)
         try {
-            someOperation();
-        } catch (Exception e) {
-            // Log the exception (but not really doing it)
-        }
+    someOperation();
+} catch (Exception e) {
+    logger.error("Exception caught: ", e);
+}
     }
 
     // Dummy method to simulate an operation that can throw IOException
