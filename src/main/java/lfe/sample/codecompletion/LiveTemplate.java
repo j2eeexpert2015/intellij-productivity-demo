@@ -23,7 +23,7 @@ public class LiveTemplate {
     try {
         
     } catch (Exception e) {
-         logger.error(e.getMessage());
+         //logger.error(e.getMessage());
     }
     
 
