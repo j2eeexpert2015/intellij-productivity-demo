@@ -18,7 +18,7 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestParam String name, @RequestParam String email) {
-        User user = userService.createUser(name,email);
+        User user = userService.registerUser(new User(name,email));
         return ResponseEntity.ok(user);
     }
 }

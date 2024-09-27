@@ -2,12 +2,12 @@ package lfe.sample.refactoring.usermanagementsystem;
 
 public class UserService {
 
-    public User createUser(String name, String email) {
-        return new User(name,email);
+    public User registerUser(User user) {
+        //return new User(name,email);
+        return user ;
+
     }
 
-    public void updateUser(User user) {
-        // Update logic
-    }
+
 }
 
