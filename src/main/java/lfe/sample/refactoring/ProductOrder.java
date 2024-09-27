@@ -23,7 +23,7 @@ public class ProductOrder {
     }
 
     public static void main(String[] args) {
-        ProductOrder order = new ProductOrder("P1234", 2, 199.99, "Alice Johnson", "123 Elm Street, Springfield");
+        ProductOrder order = new ProductOrderBuilder().setProductId("P1234").setQuantity(2).setPrice(199.99).setCustomerName("Alice Johnson").setShippingAddress("123 Elm Street, Springfield").createProductOrder();
         System.out.println(order);
     }
 }
