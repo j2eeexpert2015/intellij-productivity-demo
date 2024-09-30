@@ -22,9 +22,6 @@ public class ProductOrder {
                 ", shippingAddress=" + shippingAddress + "]";
     }
 
-    public static void main(String[] args) {
-        ProductOrder order = new ProductOrderBuilder().setProductId("P1234").setQuantity(2).setPrice(199.99).setCustomerName("Alice Johnson").setShippingAddress("123 Elm Street, Springfield").createProductOrder();
-        System.out.println(order);
-    }
+
 }
 
