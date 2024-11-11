@@ -33,14 +33,8 @@ public class SampleForFormatting {
     }
 
     private int replaceWithMapToInt() {
-        int sum = integerStringMap.values()
-                .stream()
-                .filter(Objects::nonNull)
-                .flatMap(Collection::stream)
-                .filter(stringVal -> stringVal.contains("error"))
-                .mapToInt(String::length)
-                .sum();
-        return sum;
+          int sum = integerStringMap.values().stream().filter(Objects::nonNull).flatMap(Collection::stream).filter(stringVal -> stringVal.contains("error")).mapToInt(String::length).sum();
+          return sum;
     }
 
 
