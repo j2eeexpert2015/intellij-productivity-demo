@@ -13,13 +13,16 @@ public class SampleForFormatting {
     }
 
 
-    public void wronglyFormattedMethod() {
+
+
+    public void wronglyFormattedMethod  (){
         System.out.println("First line");
-        System.out.println("Second line");
+            System.out.println("Second line");
         System.out.println("Third line");
-        for (int i = 0; i < 3; i++)
-            System.out.println("In-correct indentation");
+            for (int i = 0; i < 3; i++)
+            System.out.println("I have no idea where the indentation is supposed to be");
     }
+
 
     private Map<Integer, List<String>> integerStringMap;
 
@@ -40,6 +43,15 @@ public class SampleForFormatting {
                 .mapToInt(String::length)
                 .sum();
         return sum;
+    }
+
+
+    public void anotherWronglyFormattedMethod() {
+        System.out.println("First line");
+            System.out.println("Second line");
+        System.out.println("Third line");
+        for (int i = 0; i < 3; i++)
+            System.out.println("In-correct indentation");
     }
 
 }
