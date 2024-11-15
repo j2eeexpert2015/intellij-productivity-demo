@@ -6,6 +6,7 @@
     <version>2.7.9</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
+  <!-- Comment from Remote -->
   <groupId>lfe.sample</groupId>
   <artifactId>intellij-productivity-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
