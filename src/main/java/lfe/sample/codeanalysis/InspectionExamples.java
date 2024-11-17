@@ -2,8 +2,6 @@ package lfe.sample.codeanalysis;
 
 import java.io.File;
 import java.io.FileReader;
-import java.util.Arrays;
-import java.util.List;
 
 public class InspectionExamples {
 
@@ -15,9 +13,8 @@ public class InspectionExamples {
 
     // Redundant Code Example
     public void redundantCodeExample() {
-        if (true) { // Redundant condition
-            System.out.println("This condition is always true.");
-        }
+        // Redundant condition
+        System.out.println("This condition is always true.");
     }
 
     // Null Pointer Risk Example
