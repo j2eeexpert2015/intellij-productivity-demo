@@ -3,8 +3,11 @@ package lfe.sample.codeformatting;
 import java.util.*;
 
 public class SampleForFormatting {
+
     public static void main(String[] args) {
         int sum = add(5, 10);
+        //Sample Comment 1
+        int i = 10;
         System.out.println("Sum: " + sum);
     }
 
@@ -14,11 +17,14 @@ public class SampleForFormatting {
 
 
     public void wronglyFormattedMethod() {
+        //Sample Comment 2
+        int j = 100;
         System.out.println("First line");
-            System.out.println("Second line");
+        System.out.println("Second line");
         System.out.println("Third line");
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++) {
             System.out.println("I have no idea where the indentation is supposed to be");
+        }
     }
 
 
@@ -33,8 +39,18 @@ public class SampleForFormatting {
     }
 
     private int replaceWithMapToInt() {
-          int sum = integerStringMap.values().stream().filter(Objects::nonNull).flatMap(Collection::stream).filter(stringVal -> stringVal.contains("error")).mapToInt(String::length).sum();
-          return sum;
+
+        int sum = integerStringMap.values()
+                                  .stream()
+                                  .filter(Objects::nonNull)
+                                  .flatMap(Collection::stream)
+                                  .filter(stringVal -> stringVal.contains("error"))
+                                  .mapToInt(String::length)
+                                  .sum();
+
+
+        //int sum = integerStringMap.values().stream().filter(Objects::nonNull).flatMap(Collection::stream).filter(stringVal -> stringVal.contains("error")).mapToInt(String::length).sum();
+        return sum;
     }
 
 
@@ -42,8 +58,9 @@ public class SampleForFormatting {
         System.out.println("First line");
             System.out.println("Second line");
         System.out.println("Third line");
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++) {
             System.out.println("In-correct indentation");
+        }
     }
 
 }
